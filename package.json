@@ -80,9 +80,10 @@
     "lint:src": "eslint ./src . --fix",
     "lint:utils": "eslint ./utils . --fix",
     "pretty": "yarn format && yarn lint",
-    "test": "jest src",
+    "test": "jest src && jest utils",
     "test:ci": "yarn format && jest src",
-    "test:watch": "jest --watch src"
+    "test:src": "jest src",
+    "test:watch-src": "jest --watch src"
   },
   "jest": {
     "verbose": true,
